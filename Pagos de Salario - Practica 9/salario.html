@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Salario de Empleado</title>
+    <link rel="stylesheet" href="empleado.css">
+</head>
+<body>
+    <h1>Salario de Empleado</h1>
+    <form action="descuento.php" method="post">
+        <!-- Nombre del empleado -->
+        <label>Empleado:
+            <input type="text" name="empleado" required>
+        </label><br><br>
+        <!-- Horas trabajadas -->
+        <label>Horas:
+            <input type="number" name="horas" min="0" required>
+        </label><br><br>
+        <!-- Categoría -->
+        <label>Categoría:
+            <select name="categoria" required>
+                <option value="" disabled selected>Seleccione</option>
+                <option value="A">Jefe - $450/h</option>
+                <option value="B">Administrativo - $350/h</option>
+                <option value="C">Operador - $350/h</option>
+                <option value="D">Practicante - $150/h</option>
+            </select>
+        </label><br><br>
+        <input type="submit" value="Procesar">
+    </form>
+</body>
+</html>
